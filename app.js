@@ -1,5 +1,5 @@
 // frontend/js/app.js
-const API_BASE = https://personal-expense-backend-eqsh.onrender.com/ || "https://<YOUR_RENDER_BACKEND_URL>"; // replace after deploy
+const API_BASE = "https://personal-expense-backend-eqsh.onrender.com/"; || "https://<YOUR_RENDER_BACKEND_URL>"; // replace after deploy
 
 async function ensureToken() {
   let token = localStorage.getItem("guest_token");
@@ -45,4 +45,5 @@ async function clearData() {
   }
   return res.json();
 }
+
 
